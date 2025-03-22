@@ -39,27 +39,23 @@ function Intro() {
 // Skillset Component
 function Skillset() {
   return (
-    <div>
-      <ul className="skill-list">
-        <li className="skill" style={{ backgroundColor: "blue" }}>
-          HTML+CSS &#128516;
-        </li>
-        <li className="skill" style={{ backgroundColor: "Yellow" }}>
-          JavaScript &#128507;
-        </li>
-        <li className="skill" style={{ backgroundColor: "Green" }}>
-          Python &#128508;
-        </li>
-        <li className="skill" style={{ backgroundColor: "Gray" }}>
-          Git and GitHub &#128509;
-        </li>
-        <li className="skill" style={{ backgroundColor: "orange" }}>
-          Terraform &#128511;
-        </li>
-        <li className="skill" style={{ backgroundColor: "orange" }}>
-          React &#128515;
-        </li>
-      </ul>
+    <div className="skill-list">
+      <Skill skill="HTML+CSS" emoji="&#128507;" color="blue" />
+      <Skill skill="JavaScript" emoji="&#128508;" color="yellow" />
+      <Skill skill="Python" emoji="&#128509;" color="green" />
+      <Skill skill="React" emoji="&#128510;" color="gray" />
+      <Skill skill="Git and Github" emoji="&#128511;" color="orange" />
+      <Skill skill="Terraform" emoji="&#128512;" color="purple" />
+      <Skill skill="ARM Template/Bicep" emoji="&#128513;" color="pink" />
+    </div>
+  );
+}
+
+function Skill(props) {
+  return (
+    <div className="skill" style={{ backgroundColor: props.color }}>
+      <span>{props.skill}</span>
+      <span>{props.emoji}</span>
     </div>
   );
 }
