@@ -28,7 +28,7 @@ function Intro() {
   return (
     <div>
       <p>
-        Aspiring full-stact web developer and solutions architect for
+        Aspiring full-stack web developer and solutions architect for
         applications and databases at Shellsoft Technology Corporation, I love
         playing MMORPG games, building Gunpla, and watching anime.
       </p>
